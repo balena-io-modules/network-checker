@@ -1,0 +1,23 @@
+{
+  "name": "network-checker",
+  "version": "0.0.0",
+  "description": "A module for checking/monitoring a URL",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "./node_modules/.bin/coffee -c index.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:rulemotion/network-checker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "~2.5.3",
+    "request": "~2.51.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.8.0"
+  }
+}
