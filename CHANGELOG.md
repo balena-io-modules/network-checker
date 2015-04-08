@@ -1,0 +1,1 @@
+* Correctly return `true`/`false` from `checkHost`

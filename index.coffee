@@ -51,6 +51,10 @@ exports.checkHost = checkHost = (options) ->
 		.setTimeout(timeout, reject)
 	.finally ->
 		socket.destroy()
+	.then ->
+		return true
+	.catch ->
+		return false
 
 # options: An object of:
 #	interval: The time between each check.
