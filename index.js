@@ -58,6 +58,10 @@
       return socket.on('connect', resolve).on('error', reject).setTimeout(timeout, reject);
     })["finally"](function() {
       return socket.destroy();
+    }).then(function() {
+      return true;
+    })["catch"](function() {
+      return false;
     });
   };
 
