@@ -13,7 +13,7 @@
   exports.monitor = monitor = function(checkFn, options, fn) {
     var _check, connectivityState, interval;
     if (!_.isFunction(checkFn)) {
-      console.log("checkFn should be a Function");
+      throw new Error("checkFn should be a Function");
     }
     checkFn = Promise.method(checkFn);
     interval = (options != null ? options.interval : void 0) || 0;
