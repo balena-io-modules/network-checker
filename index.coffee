@@ -10,7 +10,7 @@ _ = require 'lodash'
 # fn(bool connected): The function that will be called each time the state changes.
 exports.monitor = monitor = (checkFn, options, fn) ->
 	if not _.isFunction(checkFn)
-		throw new Error("checkFn should be a Function")
+		throw new Error('checkFn should be a Function')
 	checkFn = Promise.method(checkFn)
 	interval = options?.interval or 0
 	connectivityState = null # Used to prevent multiple messages when disconnected
