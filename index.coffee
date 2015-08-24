@@ -1,8 +1,17 @@
 Promise = require 'bluebird'
 request = Promise.promisifyAll require 'request'
 net = require 'net'
+_ = require 'lodash'
 
-monitor = (checkFn, options, fn) ->
+# options: An object of:
+# bool checkFn(options): The function that will be used to check for connectivity.
+#	interval: The time between each check.
+#	checkHost options
+# fn(bool connected): The function that will be called each time the state changes.
+exports.monitor = monitor = (checkFn, options, fn) ->
+	if not _.isFunction(checkFn)
+		throw new Error('checkFn should be a Function')
+	checkFn = Promise.method(checkFn)
 	interval = options?.interval or 0
 	connectivityState = null # Used to prevent multiple messages when disconnected
 	_check = ->
