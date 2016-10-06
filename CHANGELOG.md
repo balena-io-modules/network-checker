@@ -1,3 +1,4 @@
+* Updated to lodash 4
 * Updated to coffee-script 1.11
 
 v0.0.5
