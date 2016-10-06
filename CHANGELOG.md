@@ -1,3 +1,5 @@
+v0.0.6
+
 * Updated to bluebird 3
 * Updated to lodash 4
 * Updated to coffee-script 1.11
