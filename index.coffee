@@ -1,5 +1,5 @@
 Promise = require 'bluebird'
-request = Promise.promisifyAll require 'request'
+request = Promise.promisifyAll(require('request'), multiArgs: true)
 net = require 'net'
 _ = require 'lodash'
 
