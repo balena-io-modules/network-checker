@@ -1,3 +1,5 @@
+* Updated to coffee-script 1.11
+
 v0.0.5
 
 * Export the base monitor function to create customized monitorHost 
