@@ -1,6 +1,6 @@
 {
   "name": "network-checker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A module for checking/monitoring a URL",
   "main": "index.js",
   "typings": "index.d.ts",
