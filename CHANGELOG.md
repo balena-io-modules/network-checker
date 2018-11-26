@@ -4,6 +4,11 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 0.1.0 - 2018-11-26
+
+* Add stub README file [Cameron Diver]
+* Add typings for project [Cameron Diver]
+
 v0.0.5
 
 * Export the base monitor function to create customized monitorHost 
