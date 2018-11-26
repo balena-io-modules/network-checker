@@ -3,6 +3,7 @@
   "version": "0.0.6",
   "description": "A module for checking/monitoring a URL",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "prepublish": "coffee -c index.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
