@@ -4,13 +4,13 @@ declare module 'network-checker' {
 	import * as net from 'net';
 
 	export interface ConnectOptions extends net.TcpNetConnectOpts, net.IpcNetConnectOpts {
-		interval: number;
-		timeout: number;
+		interval?: number;
+		timeout?: number;
 	}
 
 	export interface CheckOptions {
-		timeout: number;
-		gzip: boolean;
+		timeout?: number;
+		gzip?: boolean;
 	}
 
 	export type MonitorCheckFunction = (opt: ConnectOptions) => boolean | PromiseLike<boolean>;
