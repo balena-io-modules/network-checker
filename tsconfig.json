@@ -10,7 +10,7 @@
     "noUnusedLocals": true,
     "preserveConstEnums": true,
     "declaration": true,
-    "strictNullChecks": true,
+    "strict": true
   },
   "include": [
     "lib/**/*.ts",

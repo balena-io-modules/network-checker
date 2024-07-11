@@ -95,7 +95,7 @@ describe('network-check', () => {
 				.reply(200)
 				.times(2);
 
-			expect(await netCheck.checkUrl(`${HOST}/test`)).to.be.true;
+			expect(await netCheck.checkUrl({ url: `${HOST}/test` })).to.be.true;
 
 			expect(
 				await netCheck.checkUrl({
@@ -113,7 +113,7 @@ describe('network-check', () => {
 				})
 				.reply(200);
 
-			expect(await netCheck.checkUrl(`${HOST}/test`)).to.be.true;
+			expect(await netCheck.checkUrl({ url: `${HOST}/test` })).to.be.true;
 		});
 
 		it('returns true if url check responds with 304', async () => {
@@ -123,7 +123,7 @@ describe('network-check', () => {
 				})
 				.reply(304);
 
-			expect(await netCheck.checkUrl(`${HOST}/test`)).to.be.true;
+			expect(await netCheck.checkUrl({ url: `${HOST}/test` })).to.be.true;
 		});
 
 		it('returns false if url check responds with any other status code', async () => {
@@ -133,7 +133,7 @@ describe('network-check', () => {
 				})
 				.reply(500);
 
-			expect(await netCheck.checkUrl(`${HOST}/test`)).to.be.false;
+			expect(await netCheck.checkUrl({ url: `${HOST}/test` })).to.be.false;
 
 			mockPool
 				.intercept({
@@ -141,7 +141,7 @@ describe('network-check', () => {
 				})
 				.reply(400);
 
-			expect(await netCheck.checkUrl(`${HOST}/test`)).to.be.false;
+			expect(await netCheck.checkUrl({ url: `${HOST}/test` })).to.be.false;
 		});
 
 		it('returns false if url check times out', async () => {
@@ -163,7 +163,7 @@ describe('network-check', () => {
 
 		it('returns false if url check throws an error', async () => {
 			// Should throw an error from parsing malformed URL
-			expect(await netCheck.checkUrl('badurl')).to.be.false;
+			expect(await netCheck.checkUrl({ url: 'badurl' })).to.be.false;
 		});
 
 		it('makes request with gzip encoding if gzip option is true', async () => {
@@ -207,11 +207,18 @@ describe('network-check', () => {
 		const SOCKET = '/tmp/test.sock';
 		let server: net.Server;
 
+		interface CodedSysError extends Error {
+			code?: string;
+		}
+
+		const isCodedSysError = (e: unknown): e is CodedSysError =>
+			e != null && e instanceof Error && Object.hasOwn(e, 'code');
+
 		const cleanupSocket = () => {
 			try {
 				fs.unlinkSync(SOCKET);
-			} catch (e) {
-				if (e.code !== 'ENOENT') {
+			} catch (e: unknown) {
+				if (isCodedSysError(e) && e.code !== 'ENOENT') {
 					throw e;
 				}
 			}

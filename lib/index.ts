@@ -17,14 +17,11 @@ export interface CheckOptions {
 	gzip?: boolean;
 }
 
-export type MonitorCheckFunction = (
-	opt: ConnectOptions | CheckOptions,
-) => PromiseLike<boolean>;
 export type MonitorChangeFunction = (connected: boolean) => any;
 
-export function monitor(
-	checkFn: MonitorCheckFunction,
-	opts: ConnectOptions | (CheckOptions & { interval?: number }),
+export function monitor<T>(
+	checkFn: (options: T) => PromiseLike<boolean>,
+	opts: T & { interval?: number },
 	fn: MonitorChangeFunction,
 ): void {
 	if (typeof checkFn !== 'function') {
@@ -49,19 +46,10 @@ export function monitor(
 	void check();
 }
 
-export async function checkUrl(url: string): Promise<boolean>;
-export async function checkUrl(options: CheckOptions): Promise<boolean>;
-export async function checkUrl(input: string | CheckOptions): Promise<boolean> {
-	let url: string;
-	let timeout = 10000;
-	let gzip = true;
-	if (typeof input === 'string') {
-		url = input;
-	} else {
-		url = input.url;
-		timeout = input.timeout ?? timeout;
-		gzip = input.gzip ?? gzip;
-	}
+export async function checkUrl(opts: CheckOptions): Promise<boolean> {
+	const url = opts.url;
+	const timeout = opts.timeout ?? 10000;
+	const gzip = opts.gzip ?? true;
 	try {
 		const result = await fetch(url, {
 			method: 'GET',
@@ -80,7 +68,7 @@ export function monitorUrl(
 	opts: CheckOptions & { interval?: number },
 	fn: MonitorChangeFunction,
 ): void {
-	monitor(checkUrl, opts, fn);
+	monitor<CheckOptions>(checkUrl, opts, fn);
 }
 
 export async function checkHost(opts: ConnectOptions): Promise<boolean> {
@@ -101,5 +89,5 @@ export function monitorHost(
 	opts: ConnectOptions,
 	fn: MonitorChangeFunction,
 ): void {
-	monitor(checkHost, opts, fn);
+	monitor<ConnectOptions>(checkHost, opts, fn);
 }
