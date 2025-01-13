@@ -1,0 +1,59 @@
+- commits:
+    - subject: Rewrite in TypeScript with Node 20
+      hash: 3d21efb53eb15783b5d697c7eb6b45f77e58d31b
+      body: |
+        - Remove dependency on request, Bluebird, lodash
+        - Add tests
+        - Add linting
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Christina Ying Wang <christina@balena.io>
+        signed-off-by: Christina Ying Wang <christina@balena.io>
+      author: Christina Ying Wang
+      nested: []
+  version: 1.0.0
+  title: ""
+  date: 2025-01-13T19:44:20.406Z
+- version: 0.1.1
+  date: 2018-11-26T18:55:03Z
+  commits:
+    - hash: 529d5fd40abced452aa4c2638044d2e865c99b98
+      author: Cameron Diver
+      footers:
+        change-type: patch
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      subject: Make extra options optional in typings
+      body: ""
+- version: 0.1.0
+  date: 2018-11-26T17:50:28Z
+  commits:
+    - hash: c8a606c753dfebf651095894a8fccbae9818e17e
+      author: Cameron Diver
+      footers:
+        change-type: minor
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      subject: Add typings for project
+      body: ""
+    - hash: d4112713015ac652fc595777dbef6d9993e4d8d3
+      author: Cameron Diver
+      footers:
+        change-type: patch
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      subject: Add stub README file
+      body: ""
+- version: 0.0.6
+  date: 2016-10-06T18:23:14Z
+  commits:
+    - hash: 48866f447149cbc0de7d55cbc4016ceb403252fb
+      author: Pagan Gazzard
+      subject: Update to bluebird 3
+      body: ""
+    - hash: 8045b35c8b73d25ebe450c8ada56c1095cb561f2
+      author: Pagan Gazzard
+      subject: Update to coffee-script 1.11
+      body: ""
+    - hash: f52060b2397144650dfd85472b06a7d9f2fb78ea
+      author: Pagan Gazzard
+      subject: Update to lodash 4
+      body: ""

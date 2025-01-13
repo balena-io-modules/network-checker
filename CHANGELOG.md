@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.0 - 2025-01-13
+
+* Rewrite in TypeScript with Node 20 [Christina Ying Wang]
+
 ## 0.1.1 - 2018-11-26
 
 * Make extra options optional in typings [Cameron Diver]
