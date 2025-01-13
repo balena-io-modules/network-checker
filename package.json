@@ -4,7 +4,7 @@
   "description": "A module for checking/monitoring a URL",
   "main": "dist/index.js",
   "scripts": {
-    "prettify": "balena-lint --fix lib/ test/",
+    "lint-fix": "balena-lint --fix lib/ test/",
     "lint": "balena-lint lib/ test/ && tsc --noEmit",
     "clean": "rimraf dist",
     "build": "npm run clean && tsc --project ./tsconfig.release.json",
