@@ -1,6 +1,6 @@
 {
   "name": "network-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for checking/monitoring a URL",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -41,6 +41,6 @@
     "undici": "^6.14.0"
   },
   "versionist": {
-    "publishedAt": "2025-01-13T19:44:20.448Z"
+    "publishedAt": "2025-01-23T20:09:18.404Z"
   }
 }

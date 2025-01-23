@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update NPM module configuration
+      hash: d44710c8b085c7600d0494a4c78d199012de4815
+      body: |
+        Export types and limin the files that are published on NPM
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Felipe Lalanne
+      nested: []
+  version: 1.0.1
+  title: ""
+  date: 2025-01-23T20:09:18.359Z
+- commits:
     - subject: Rewrite in TypeScript with Node 20
       hash: 3d21efb53eb15783b5d697c7eb6b45f77e58d31b
       body: |

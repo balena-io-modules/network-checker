@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.1 - 2025-01-23
+
+* Update NPM module configuration [Felipe Lalanne]
+
 ## 1.0.0 - 2025-01-13
 
 * Rewrite in TypeScript with Node 20 [Christina Ying Wang]
