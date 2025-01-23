@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update package.json metadata
+      hash: bdcb6fa6b850c0c33e85a12c22a05d59f40805c9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Felipe Lalanne
+      nested: []
+  version: 1.0.2
+  title: ""
+  date: 2025-01-23T22:02:35.473Z
+- commits:
     - subject: Update NPM module configuration
       hash: d44710c8b085c7600d0494a4c78d199012de4815
       body: |
