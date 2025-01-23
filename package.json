@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "A module for checking/monitoring a URL",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "scripts": {
     "lint-fix": "balena-lint --fix lib/ test/",
     "lint": "balena-lint lib/ test/ && tsc --noEmit",
