@@ -22,7 +22,7 @@
     "type": "git",
     "url": "git@github.com:balena-io-modules/network-checker.git"
   },
-  "author": "",
+  "author": "Balena Inc. <hello@balena.io>",
   "license": "ISC",
   "engines": {
     "node": ">=20",
