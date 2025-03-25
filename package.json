@@ -29,7 +29,7 @@
     "npm": ">=10"
   },
   "devDependencies": {
-    "@balena/lint": "^8.0.2",
+    "@balena/lint": "^9.0.0",
     "@types/chai": "^4.3.14",
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.12.7",
