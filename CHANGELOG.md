@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.4 - 2025-04-02
+
+* Update dependency mocha to v11 [balena-renovate[bot]]
+
 ## 1.0.3 - 2025-03-25
 
 * Update dependency @balena/lint to v9 [balena-renovate[bot]]
