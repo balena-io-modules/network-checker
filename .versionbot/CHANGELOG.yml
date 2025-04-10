@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency undici to v7
+      hash: e41fbd7435898b04fcfc876d0316296203c47e6c
+      body: |
+        Update undici from 6.21.2 to 7.7.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 1.0.6
+  title: ""
+  date: 2025-04-10T11:25:51.660Z
+- commits:
     - subject: Update dependency rimraf to v6
       hash: cfd06f2c475642fe898da39824d6e58296971d41
       body: |

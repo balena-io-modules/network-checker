@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.6 - 2025-04-10
+
+* Update dependency undici to v7 [balena-renovate[bot]]
+
 ## 1.0.5 - 2025-04-09
 
 * Update dependency rimraf to v6 [balena-renovate[bot]]
