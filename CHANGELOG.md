@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.7 - 2026-02-19
+
+* Add id-token: write permission for NPM OIDC publishing [Kyle Harding]
+
 ## 1.0.6 - 2025-04-10
 
 * Update dependency undici to v7 [balena-renovate[bot]]

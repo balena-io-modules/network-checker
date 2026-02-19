@@ -1,4 +1,18 @@
 - commits:
+    - subject: "Add id-token: write permission for NPM OIDC publishing"
+      hash: 4141786e55ed1245fba454549244e1892642d6d5
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 1.0.7
+  title: ""
+  date: 2026-02-19T01:52:32.903Z
+- commits:
     - subject: Update dependency undici to v7
       hash: e41fbd7435898b04fcfc876d0316296203c47e6c
       body: |
