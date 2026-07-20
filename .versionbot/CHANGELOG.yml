@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency chai to v5
+      hash: 9e9d8571d7d8a1a2e3d7088d59761952f382c2fc
+      body: |
+        Update chai from 4.5.0 to 5.3.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 1.0.8
+  title: ""
+  date: 2026-07-20T07:16:38.100Z
+- commits:
     - subject: "Add id-token: write permission for NPM OIDC publishing"
       hash: 4141786e55ed1245fba454549244e1892642d6d5
       body: ""
