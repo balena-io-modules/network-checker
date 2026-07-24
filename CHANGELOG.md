@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.9 - 2026-07-24
+
+* Pin dependencies [balena-renovate[bot]]
+
 ## 1.0.8 - 2026-07-20
 
 * Update dependency chai to v5 [balena-renovate[bot]]
