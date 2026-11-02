@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.11 - 2026-11-02
+
+* Update dependency chai to v6 [balena-renovate[bot]]
+
 ## 1.0.10 - 2026-11-01
 
 * Update dependency undici to v7.30.1 [SECURITY] [balena-renovate[bot]]

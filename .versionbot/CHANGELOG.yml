@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency chai to v6
+      hash: 4e3dd31ff0453b2a5db4be842ac524426625d2d1
+      body: |
+        Update chai from 5.3.3 to 6.3.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 1.0.11
+  title: ""
+  date: 2026-11-02T23:24:34.545Z
+- commits:
     - subject: Update dependency undici to v7.30.1 [SECURITY]
       hash: 4b90d30414024a1168c92848534b0aee0696110d
       body: |
