@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.12 - 2026-11-03
+
+* Update dependency flowzonify to v0.4.23 [balena-renovate[bot]]
+
 ## 1.0.11 - 2026-11-02
 
 * Update dependency chai to v6 [balena-renovate[bot]]
