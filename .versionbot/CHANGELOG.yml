@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency rimraf to v6.1.4
+      hash: 1c9db8b32c9652185702b949849e0807fa41718e
+      body: |
+        Update rimraf from 6.1.3 to 6.1.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 1.0.15
+  title: ""
+  date: 2026-11-07T01:05:59.906Z
+- commits:
     - subject: Update dependency mocha to v12
       hash: 028cfafe403334cf657186e38b74212492168b3e
       body: |

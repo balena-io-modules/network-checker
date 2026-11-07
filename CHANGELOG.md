@@ -4,6 +4,10 @@ v0.0.6
 * Updated to lodash 4
 * Updated to coffee-script 1.11
 
+## 1.0.15 - 2026-11-07
+
+* Update dependency rimraf to v6.1.4 [balena-renovate[bot]]
+
 ## 1.0.14 - 2026-11-03
 
 * Update dependency mocha to v12 [balena-renovate[bot]]
